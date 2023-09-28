@@ -1,0 +1,23 @@
+.callback{
+    display: flex;
+    border: 1px solid white;
+    align-items: center;
+    width: 300px;
+    justify-content: center;
+    border-radius: 30px;
+    cursor: pointer;
+    user-select: none;
+    .call_icon{
+        margin-right: 10px;
+        font-size: 1.1rem;
+    }
+    .callback_text{
+        font-size:1.1rem ;  
+      }
+
+    &:active{
+        scale: 0.98;
+    }
+
+}
+

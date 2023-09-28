@@ -1,0 +1,87 @@
+.earn_container{
+    cursor: pointer;
+    padding: 2rem 4rem;
+    background-color: #1E1E1E;
+    border-radius: 20px;
+    display: flex;
+    width: 65%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    .video_image{
+        flex-basis: 25%;
+        width: 250px;
+        text-align: center;
+        margin:  1rem 0 0 3rem;    
+        .top_earner{
+            display: flex;
+            align-items: center;
+            background-color: #707070;
+            color: white;
+            border-radius: 5px;
+            width: 180px;
+            justify-content: center;
+            .earner_icon{
+                margin-right: 5px;
+            }
+
+        }   
+        img{
+            margin-top: 1rem;
+            border-radius: 15px;
+            width: 100%;
+        }
+        h3{
+            color: #707070;
+        }
+    }
+
+
+    .video_content{
+        flex-basis: 30%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        text-transform: capitalize;
+        .title{
+            font-size: 1.2rem;
+            padding-top: 10px;
+        }
+        .video_content_icon{
+            font-size: 1.2rem;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+        .content{
+            font-size: 1.2rem;
+        }
+    }
+
+    .video_earning{
+        flex-basis: 35%;
+        height: 250px;
+        width: 150px;
+        background-color: #282828;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        .money{
+            font-size: 2.5rem;
+        }
+        .check_btn{
+            background-color: #FFFFFF;
+            color: black;
+            border-radius: 35px;
+            padding: 5px 24px;
+
+            &:active{
+                scale: 0.98;
+            }
+        }
+    }
+}

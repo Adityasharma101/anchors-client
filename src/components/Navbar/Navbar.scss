@@ -1,0 +1,24 @@
+nav{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    height: 120px;
+    margin-top: 3rem;
+
+    .logo{
+        font-family: 'Sora', sans-serif ;
+        display: flex;
+        width: 12%;
+        font-size: 2.3rem;
+
+        .logo_icon{
+            color: red;
+            font-size: 2.4rem;
+        }
+        .logo_name{
+            margin-left: 1rem;
+        }
+    }
+}
