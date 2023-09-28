@@ -15,7 +15,7 @@ const Search = () => {
 
   const handleButtonCLick =async()=>{
     try {
-      const response = await axios.post('http://localhost:3500/api',{
+      const response = await axios.post('http://52.66.204.208:3000/api',{
         "videoUrl" : input
       })
 
