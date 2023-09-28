@@ -50,7 +50,20 @@
     align-items: center;
     font-size: 1.7rem;
     text-align: center;
+    flex-direction: column;
+  
   }
+  .body input{
+    font-size: 1.2rem;
+    border: 1px solid #FFFF;
+    background-color: #101010;
+    color: #FFFF;
+    margin: 1rem;
+    padding: 15px 18px;
+    border-radius: 10px;
+    width: 250px;
+  }
+
   
   .modalContainer .footer {
     flex: 20%;
@@ -71,8 +84,11 @@
     cursor: pointer;
   }
   
-  #cancelBtn {
-    background-color: white
-    ;
+  #callbackBtn {
+    background-color: white;
     color: black;
+    width: 50%;
+    &:active{
+      scale: 0.98;
+    }
   }

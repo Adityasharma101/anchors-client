@@ -1,5 +1,4 @@
 import React from 'react'
-import test from '../../assets/test.jpg'
 import {BiSolidCommentMinus} from 'react-icons/bi'
 import {BsFillEyeFill } from 'react-icons/bs'
 import {AiFillLike} from 'react-icons/ai'

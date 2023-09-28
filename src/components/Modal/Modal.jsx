@@ -1,42 +1,45 @@
-import React from 'react'
-import {RxCross2} from "react-icons/rx"
-import './Modal.scss'
+import React, { useState } from "react";
+import { RxCross2 } from "react-icons/rx";
+import axios from "axios";
 
-const Modal = ({setModalOpen}) => {
-  return (
+import "./Modal.scss";
+import Modal1 from "./Modal1";
+import Modal2 from "./Modal2";
+
+const Modal = ({ setModalOpen }) => {  
+  const [name , setName]= useState('');
+  const [num , setNum]= useState('');
+  let data = null;
+  const handleCallbackSubmit  = async()=>{
+    try {
+      const response = await axios.post('http://localhost:3500/request-callback',{
+        "name" : name,
+        "contactNumber" : num
+      })
+
+      data = response.data;
+      console.log(data)
+    } catch (error) {
+      console.log(error)
+    }
+
+  }
+  return (  
     <div className="modalBackground">
-    <div className="modalContainer">
-      <div className="titleCloseBtn">
-        <button
-          onClick={() => {
-            setModalOpen(false);
-          }}
-        >
-          <RxCross2 color='#FFFF'/>
-        </button>
-      </div>
-      <div className="title">
-        <h3>
-        Request a Call Back
-          </h3>
-      </div>
-      <div className="body">
-       <input type="text" />
-       <input type="text" />
-      </div>
-      <div className="footer">
-        <button
-          onClick={() => {
-           
-          }}
-          id="cancelBtn"
-        >   
-            Request a Call Back
-        </button>
+      <div className="modalContainer">
+        <div className="titleCloseBtn">
+          <button
+            onClick={() => {
+              setModalOpen(false);
+            }}
+          >
+            <RxCross2 color="#FFFF" />
+          </button>
+        </div>
+        {data ? <Modal2/>: <Modal1 setName={setName} setNum={setNum} handleCallbackSubmit={ handleCallbackSubmit}/>}
       </div>
     </div>
-  </div>
-  )
-}
+  );
+};
 
-export default Modal
+export default Modal;
