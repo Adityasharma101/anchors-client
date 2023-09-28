@@ -5,22 +5,21 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 3rem;
   align-items: center;
   height: 400px;
   .home_content_main,
   .home_content_min {
-    margin-top: 2rem;
+    margin-top: 1rem;
     text-align: center;
   }
   .home_content_main {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
   }
 
   .home_content_min {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     font-weight: 100;
     color: grey;
   }
@@ -31,5 +30,5 @@ body{
     bottom: -40px;
     right: -40px;
     color: #1E1E1E;
-    font-size: 18rem;
+    font-size: 15rem;
 }
