@@ -12,7 +12,7 @@ const Modal = ({ setModalOpen }) => {
   let data = null;
   const handleCallbackSubmit  = async()=>{
     try {
-      const response = await axios.post('http://localhost:3500/request-callback',{
+      const response = await axios.post('http://52.66.204.208:3000/request-callback',{
         "name" : name,
         "contactNumber" : num
       })
