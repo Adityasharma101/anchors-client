@@ -16,8 +16,8 @@ const Earncontainer = ({data}) => {
                 <PiMedalFill className='earner_icon'/>
                 <p>Top Earner Video</p>
             </div>
-            <img src={test} alt="Video_image" />
-            <h3>Uploaded On - {data.uploadedDate }</h3>
+            <img src={data.thumbnailUrl} alt="Video_image" />
+            <h3>Uploaded On - {data.date }</h3>
         </div>
         <div className="video_content">
             <p className='title'>{data.videoTitle}</p>
